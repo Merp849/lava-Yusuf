@@ -4,16 +4,14 @@ let os = require('os');
 if (!child) throw new Error('Install child_process dependency dulu di package.json');
 
 let exec = child.exec;
-
-
-let lava = require('./Lavalink.jar');
-if (lava === undefined) {
-console.log('[INFO] Melakukan Download terhadap Lavalink !');
 exec('curl https://ci.fredboat.com/repository/download/Lavalink_Build/8110:id/Lavalink.jar?guest=1 -o Lavalink.jar', (err, stdout, stderr) => {
 if (err) {
 return console.log('[INFO] lavalink gagal di download!');
 } 
 else console.log('[INFO] lavalink berhasil di download!');
+
+
+let lava = require('./Lavalink.jar');
 
 let lava1 = require('./Lavalink.jar');
 if (lava1 === undefined) return console.log('[INFO] Sepertinya tidak ditemukan file Lavalink!');
@@ -35,4 +33,4 @@ return console.log('[INFO] gagal menjalankan Lavalink! ');
 console.log(stdout);
 }
 })
-}
+
