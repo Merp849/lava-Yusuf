@@ -1,0 +1,18 @@
+dependencies:
+  child_process: 1.0.2
+  os: 0.1.1
+packages:
+  /child_process/1.0.2:
+    dev: false
+    resolution:
+      integrity: sha1-sffn/HPSXn/R1FWtyU4UODAYK1o=
+  /os/0.1.1:
+    dev: false
+    resolution:
+      integrity: sha1-IIhF6J4ZOtTZcUdLk5R3NqVtE/M=
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  child_process: '*'
+  os: '*'
